@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.flowOn
 import kotlin.coroutines.CoroutineContext
 
 class DataRepository constructor(
-        private val remoteRepository: RemoteData, private val ioDispatcher: CoroutineContext
+    private val remoteRepository: RemoteData, private val ioDispatcher: CoroutineContext
 ) : DataRepositorySource {
 
     override suspend fun requestStocks(): Flow<Resource<Stocks>> {

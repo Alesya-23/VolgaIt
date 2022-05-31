@@ -4,10 +4,13 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.laba.volgait.databinding.ItemListStockBinding
-import com.laba.volgait.model.models.Stock
 import com.laba.volgait.ui.stocks.StocksListViewModel
+import io.finnhub.api.models.StockSymbol
+import java.util.ArrayList
 
-class StocksAdapter(private val stocksViewModel: StocksListViewModel, private val stocks: List<Stock>) :
+class StocksAdapter(
+    private val stocks: ArrayList<StockSymbol>
+) :
     RecyclerView.Adapter<StocksViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StocksViewHolder {
         val itemBinding =

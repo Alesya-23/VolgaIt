@@ -3,4 +3,6 @@
     <string name="name_stock_text_view">nameStock</string>
     <string name="price_stock_text_view">price</string>
     <string name="list_stock_activity_title">List stocks</string>
+    <string name="no_internet">Please check your internet connection</string>
+    <string name="network_error">Network error, could get data,please try again!</string>
 </resources>
